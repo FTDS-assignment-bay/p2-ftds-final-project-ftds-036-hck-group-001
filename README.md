@@ -43,6 +43,7 @@ main/
 │   │
 │   ├── Dockerfile - File konfigurasi untuk membangun container aplikasi menggunakan Docker.
 │   └── requirements.txt - Daftar dependensi Python yang diperlukan untuk menjalankan aplikasi deployment.
+│
 ├── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
 └── demandSenseAI_logo.jpeg - Gambar mengenai logo DemandSense AI
 ```
@@ -103,6 +104,7 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
 
 
 
