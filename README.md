@@ -5,33 +5,44 @@
 ## Repository Outline
 ```
 main/
-├── Data Modelling/
-|   ├── demand_forecasting_model.ipynb - Notebook berisi proses training model forecasting.
-|   └── saved_model/ - Folder berisi model yang sudah dilatih (RNN dan XGBoost).
-|
 ├── Data Preprocessing/
-|   ├── dataset/ - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
-|   ├── cleaned_data_analysis.csv - Dataset yang sudah diolah dan dibersihkan untuk keperluan tim analisis.
+|   ├── raw dataset/ - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
+|   |
+|   ├── analysis_dataset/
+|   |   └── cleaned_data_analysis.csv - Dataset yang sudah diolah dan dibersihkan untuk keperluan tim analisis.
+|   |
+|   ├── modelling_dataset/
+|   |   ├── forecast_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (semua kategori produk).
+|   |   ├── forecast_bathroom_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Bathroom & Cleaning).
+|   |   ├── forecast_home_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Home Organization & Living).
+|   |   ├── forecast_kitchen_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Kitchen & Dining).
+|   |   ├── forecast_other_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Other).
+|   |   ├── forecast_storage_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Food Storage &  Packaging).
+|   |   └── forecast_tools_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Tools & Accessories).
+|   |
 |   ├── data_pipeline.png - Gambar yang menunjukkan data pipeline dari projek ini.
-|   ├── data_preprocessing.ipynb - File notebook yang berisikan untuk mengolah dan membersihkan data mentah menjadi dataset siap pakai untuk keperluan tim
-|   |                              analisis dan tim modelling.
+|   ├── data_preprocessing.ipynb - File notebook untuk mengolah dan membersihkan data mentah agar siap pakai untuk keperluan analisis dan modelling
 |   ├── data_preprocessing_DAG.py - File untuk mengotomasi data pipeline dari loading data dari database, mengolah dan membersihkan data, dan upload data.
-|   ├── forecast_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (semua kategori produk).
-|   ├── forecast_bathroom_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Bathroom & Cleaning).
-|   ├── forecast_home_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Home Organization & Living).
-|   ├── forecast_kitchen_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Kitchen & Dining).
-|   ├── forecast_other_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Other).
-|   ├── forecast_storage_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Food Storage &  Packaging).
-|   ├── forecast_tools_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Tools & Accessories).
 |   └── table_creation.sql - File untuk pembuatan tabel ke dalam database.
 |
-├── data_analysis/
+├── Data Analysis/
 |   ├── dataset/
-│   |   ├── data_from_DE.csv - Dataset yang diperoleh dari tim Data Engineer yang digunakan sebagai sumber data utama untuk analisis.
+│   |   ├── data_from_DE.csv - Dataset yang diperoleh dari tim Data Engineer yang digunakan sebagai sumber data untuk analisis.
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard.
-|   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan.
+|   |
+|   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data, analisis pola demand, dan identifikasi faktor yang mempengaruhi penjualan.
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data.
 |
+├── Data Modelling/
+│
+├── deployment/
+│   ├── src/
+│   │   ├── eda.py - Script untuk menampilkan visualisasi dan insight hasil Exploratory Data Analysis (EDA) pada aplikasi.
+│   │   ├── prediction.py - Script untuk menjalankan model forecasting dan menampilkan hasil prediksi permintaan.
+│   │   └── streamlit_app.py - File utama aplikasi Streamlit yang mengatur layout dan navigasi halaman EDA serta Prediction.
+│   │
+│   ├── Dockerfile - File konfigurasi untuk membangun container aplikasi menggunakan Docker.
+│   └── requirements.txt - Daftar dependensi Python yang diperlukan untuk menjalankan aplikasi deployment.
 ├── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
 └── demandSenseAI_logo.jpeg - Gambar mengenai logo DemandSense AI
 ```
@@ -92,5 +103,6 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
 
 
