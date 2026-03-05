@@ -3,6 +3,9 @@
 ## Repository Outline
 ```
 main
+├── Data Modelling
+|   ├──
+|   └── 
 ├── Data Preprocessing
 |   ├── dataset - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
 |   ├── cleaned_data_analysis.csv - Dataset yang sudah diolah dan dibersihkan untuk keperluan tim analisis.
@@ -24,9 +27,6 @@ main
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard.
 |   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan.
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data.
-├── Data Modelling
-|   ├──
-|   └── 
 └── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
 ```
 
@@ -50,7 +50,7 @@ Dataset ini berisi data transaksi pesanan e-commerce Indonesia dari Desember 202
 
 ## Method
 1. Database: PostgreSQL
-2. Penanganan missing values: Imputation dengan value tertentu
+2. Penanganan missing values: Imputation dengan nilai tertentu
 3. Otomasi data pipeline: Airflow
 4. Model Machine Learning:
 5. Metode training:
@@ -87,3 +87,4 @@ Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah ekspl
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
 
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
+
