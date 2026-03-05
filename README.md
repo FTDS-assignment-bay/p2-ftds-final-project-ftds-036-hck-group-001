@@ -1,5 +1,5 @@
 # **DemandSense AI**
-## **Market Demand and Sales Analysis**
+**Market Demand and Sales Analysis**
 
 ## Repository Outline
 ```
@@ -59,3 +59,4 @@ Analisis dalam proyek ini mencakup beberapa aspek utama, yaitu:
 ## Dashboard
 
 Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah eksplorasi insight secara interaktif. Dashboard ini menampilkan ringkasan performa penjualan, distribusi permintaan produk, tren penjualan, serta beberapa indikator operasional utama yang relevan untuk pengambilan keputusan bisnis.
+
