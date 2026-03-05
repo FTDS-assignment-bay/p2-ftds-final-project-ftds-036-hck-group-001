@@ -51,23 +51,6 @@ Output dari project ini adalah sebuah aplikasi yang memprediksi customer's deman
 ## Data
 Dataset ini berisi data transaksi pesanan e-commerce Indonesia dari Desember 2023 – November 2025, yang berisikan informasi seperti jumlah produk, biaya pengiriman, diskon, metode pembayaran, dan tujuan pengiriman. Setiap baris mewakili satu pesanan yang telah selesai atau dibatalkan. Dataset ini memiliki total 26,258 catatan pesanan dengan 50 kolom/atribut.
 
-## Method
-1. Database: PostgreSQL
-2. Penanganan missing values: Imputation dengan nilai tertentu
-3. Otomasi data pipeline: Airflow
-4. Model Machine Learning:
-5. Metode training:
-6. Metriks evaluasi:
-7. Dashboard: PowerBI
-8. Deployment: HuggingFace
-
-## Stacks
-Programming langugage: SQL dan Python
-
-Tools: Visual Studio Code, PostgreSQL, PowerBI, dan HuggingFace
-
-Library: psycopg2, pandas, numpy, glob, os, datetime, pendulum, elasticsearch, airflow
-
 ## Analysis Scope
 Analisis dalam proyek ini mencakup beberapa aspek utama, yaitu:
 
@@ -83,8 +66,22 @@ Analisis dalam proyek ini mencakup beberapa aspek utama, yaitu:
 - Operational Factors:  
     Mengevaluasi tingkat pengembalian produk dan pembatalan pesanan untuk memahami potensi hambatan dalam proses transaksi.
 
-## Dashboard
-Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah eksplorasi insight secara interaktif. Dashboard ini menampilkan ringkasan performa penjualan, distribusi permintaan produk, tren penjualan, serta beberapa indikator operasional utama yang relevan untuk pengambilan keputusan bisnis.
+## Method
+1. Database: PostgreSQL
+2. Penanganan missing values: Imputation dengan nilai tertentu
+3. Otomasi data pipeline: Airflow
+4. Model Machine Learning:
+5. Metode training:
+6. Metriks evaluasi:
+7. Dashboard: Power BI
+8. Deployment: HuggingFace
+
+## Stacks
+Programming langugage: SQL dan Python
+
+Tools: Visual Studio Code, PostgreSQL, Power BI, dan HuggingFace
+
+Library: psycopg2, pandas, numpy, glob, os, datetime, pendulum, elasticsearch, airflow
 
 ## Reference
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
@@ -92,3 +89,4 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
