@@ -29,7 +29,8 @@ main/
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard.
 |   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan.
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data.
-└── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
+├── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
+└── demandSenseAI_logo.jpeg - Gambar mengenai logo DemandSense AI
 ```
 
 ## Project Overview
@@ -90,5 +91,4 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
-
-
+URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
