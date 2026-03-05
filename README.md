@@ -1,4 +1,4 @@
-# **DemandSense AI (Market Demand and Sales Analysis)**
+# **DemandSense AI: Market Demand Analysis and Forecasting**
 
 ![For accurate demand prediction!](demandSenseAI_logo.jpeg)
 
@@ -104,6 +104,7 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
 
 
 
