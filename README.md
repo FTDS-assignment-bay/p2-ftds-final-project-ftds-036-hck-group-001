@@ -34,7 +34,9 @@ main/
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data.
 |
 ├── Data Modelling/
-│
+│   ├── data_scientis.ipynb - Notebook berisi proses training model forecasting.
+|   └── saved_model/ - Folder berisi model yang sudah dilatih (RNN dan XGBoost).
+|
 ├── deployment/
 │   ├── src/
 │   │   ├── eda.py - Script untuk menampilkan visualisasi dan insight hasil Exploratory Data Analysis (EDA) pada aplikasi.
@@ -104,6 +106,7 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
 
 
 
