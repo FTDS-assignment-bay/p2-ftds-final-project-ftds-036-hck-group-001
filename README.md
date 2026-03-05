@@ -6,8 +6,9 @@
 ```
 main/
 ├── Data Modelling/
-|   ├──
-|   └── 
+|   ├── demand_forecasting_model.ipynb - Notebook berisi proses training model forecasting.
+|   └── saved_model/ - Folder berisi model yang sudah dilatih (RNN dan XGBoost).
+|
 ├── Data Preprocessing/
 |   ├── dataset/ - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
 |   ├── cleaned_data_analysis.csv - Dataset yang sudah diolah dan dibersihkan untuk keperluan tim analisis.
@@ -23,12 +24,14 @@ main/
 |   ├── forecast_storage_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Food Storage &  Packaging).
 |   ├── forecast_tools_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Tools & Accessories).
 |   └── table_creation.sql - File untuk pembuatan tabel ke dalam database.
+|
 ├── data_analysis/
 |   ├── dataset/
 │   |   ├── data_from_DE.csv - Dataset yang diperoleh dari tim Data Engineer yang digunakan sebagai sumber data utama untuk analisis.
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard.
 |   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan.
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data.
+|
 ├── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini.
 └── demandSenseAI_logo.jpeg - Gambar mengenai logo DemandSense AI
 ```
@@ -70,9 +73,9 @@ Analisis dalam proyek ini mencakup beberapa aspek utama, yaitu:
 1. Database: PostgreSQL
 2. Penanganan missing values: Imputation dengan nilai tertentu
 3. Otomasi data pipeline: Airflow
-4. Model Machine Learning:
-5. Metode training:
-6. Metriks evaluasi:
+4. Model Machine Learning: Hybrid Deep Learning Ensemble Model.
+5. Metode training: Hybrid RNN + XGBoost Ensemble.
+6. Metriks evaluasi: MAE (Mean Absolute Error), MAPE(Mean Absolute Percentage Error), Volume Accuracy (Mengukur akurasi total volume prediksi terhadap volume aktual)
 7. Dashboard: Power BI
 8. Deployment: HuggingFace
 
@@ -81,7 +84,7 @@ Programming langugage: SQL dan Python
 
 Tools: Visual Studio Code, PostgreSQL, Power BI, dan HuggingFace
 
-Library: psycopg2, pandas, numpy, glob, os, datetime, pendulum, elasticsearch, airflow
+Library: psycopg2, pandas, numpy, glob, os, datetime, pendulum, elasticsearch, airflow, tensorflow, xgboost, scikit-learn, matplotlib, plotly, joblib
 
 ## Reference
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
@@ -89,4 +92,5 @@ URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sale
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
+
 
