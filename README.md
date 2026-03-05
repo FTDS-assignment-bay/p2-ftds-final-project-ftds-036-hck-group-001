@@ -24,7 +24,10 @@ main
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard
 |   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan
 |   └── sales_dashboard.pbix - Dashboard Power BI yang menampilkan insight utama dari hasil analisis data
-└── Data Modelling
+├── Data Modelling
+|   ├──
+|   └── 
+└── README.md - File berisikan ringkasan deskripsi dan dokumentasi dari projek ini
 ```
 
 ## Project Overview
@@ -58,5 +61,6 @@ Analisis dalam proyek ini mencakup beberapa aspek utama, yaitu:
 ## Dashboard
 
 Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah eksplorasi insight secara interaktif. Dashboard ini menampilkan ringkasan performa penjualan, distribusi permintaan produk, tren penjualan, serta beberapa indikator operasional utama yang relevan untuk pengambilan keputusan bisnis.
+
 
 
