@@ -2,12 +2,12 @@
 
 ## Repository Outline
 ```
-main
-├── Data Modelling
+main/
+├── Data Modelling/
 |   ├──
 |   └── 
-├── Data Preprocessing
-|   ├── dataset - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
+├── Data Preprocessing/
+|   ├── dataset/ - Folder yang berisikan data-data mentah per bulan dari Desember 2023 sampai November 2025 dalam format xlsx.
 |   ├── cleaned_data_analysis.csv - Dataset yang sudah diolah dan dibersihkan untuk keperluan tim analisis.
 |   ├── data_pipeline.png - Gambar yang menunjukkan data pipeline dari projek ini.
 |   ├── data_preprocessing.ipynb - File notebook yang berisikan untuk mengolah dan membersihkan data mentah menjadi dataset siap pakai untuk keperluan tim
@@ -21,8 +21,8 @@ main
 |   ├── forecast_storage_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Food Storage &  Packaging).
 |   ├── forecast_tools_data.csv - Dataset yang sudah dipersiapkan untuk keperluan tim modelling (kategori produk Tools & Accessories).
 |   └── table_creation.sql - File untuk pembuatan tabel ke dalam database.
-├── data_analysis
-|   ├── dataset
+├── data_analysis/
+|   ├── dataset/
 │   |   ├── data_from_DE.csv - Dataset yang diperoleh dari tim Data Engineer yang digunakan sebagai sumber data utama untuk analisis.
 │   |   └── data_dashboard.csv - Dataset yang telah diproses dan dibersihkan untuk keperluan visualisasi dashboard.
 |   ├── data_analysis.ipynb - Notebook berisi proses eksplorasi data (EDA), analisis pola permintaan, serta identifikasi faktor yang mempengaruhi penjualan.
@@ -87,4 +87,5 @@ Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah ekspl
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
 
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
+
 
