@@ -1,5 +1,7 @@
 # **DemandSense AI (Market Demand and Sales Analysis)**
 
+![For accurate demand prediction!](demandSenseAI_logo.jpeg)
+
 ## Repository Outline
 ```
 main/
@@ -87,5 +89,6 @@ Hasil analisis divisualisasikan dalam Power BI dashboard untuk mempermudah ekspl
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
 
 URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
+
 
 
