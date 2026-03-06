@@ -107,6 +107,8 @@ URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
 
+URL Refrensi Journal Data Modelling: https://jcasc.com/index.php/jcasc/article/view/3736 
+
 
 
 
