@@ -110,7 +110,7 @@ Library: psycopg2, pandas, numpy, glob, os, datetime, pendulum, elasticsearch, a
 ## Reference
 URL Dataset: https://www.kaggle.com/datasets/bakitacos/indonesia-e-commerce-sales-and-shipping-20232025
 
-URL HuggingFace: https://huggingface.co/spaces/Raifky/final_project_model
+URL HuggingFace: https://huggingface.co/spaces/Dhansstar/ForeacastingApp
 
 URL Presentation Slides: https://docs.google.com/presentation/d/1jSPtnN4fhYYo9X-LHmDsqbEbl2I3Py_hnNuDLsW3Z10/edit?usp=sharing
 

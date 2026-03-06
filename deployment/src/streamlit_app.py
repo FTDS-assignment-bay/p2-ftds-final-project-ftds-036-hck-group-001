@@ -1,19 +1,22 @@
 import streamlit as st
+from eda import run_eda
+from prediction_forecast import run_product_forecast
+from predicition_csv import run_prediction_page
 
-st.set_page_config(
-    page_title="DemandSense AI",
-    layout="wide"
-)
+st.set_page_config(page_title="Forecasting Dashboard", layout="wide")
 
-import eda
-import prediction
+def main():
+    st.sidebar.title("🤖 AI Forecaster")
+    menu = st.sidebar.radio("Menu:", ["Home", "EDA", "Forecast", "Upload CSV"])
 
-page = st.sidebar.selectbox(
-    "Choose page",
-    ("EDA", "Prediction")
-)
+    if menu == "Home":
+        st.title("Selamat Datang")
+    elif menu == "EDA":
+        run_eda() # Load CSV ada di dalem sini
+    elif menu == "Forecast":
+        run_product_forecast() # Load CSV juga di dalem sini
+    elif menu == "Upload CSV":
+        run_prediction_page() # Upload di dalem sini
 
-if page == "EDA":
-    eda.run()
-else:
-    prediction.run()
+if __name__ == "__main__":
+    main()
